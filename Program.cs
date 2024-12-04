@@ -28,8 +28,8 @@
             var fourLegAndOlderThenThree = animaList.Where(a => a.NumberOfLegs == 4 && a.Age > 3).ToList();
             fourLegAndOlderThenThree.ForEach(a => Console.WriteLine(a.Name));
             //e
-            var shadow = animaList.Any(a => a.Name == "Shadow");
-            var isShadow = shadow ? "Yes there are animal named Shadow in the list" : "No animal named Shadow was found";
+            var isThereShadow = animaList.Any(a => a.Name == "Shadow");
+            var isShadow = isThereShadow ? "Yes there are animal named Shadow in the list" : "No animal named Shadow was found";
             Console.WriteLine(isShadow);
 
 
